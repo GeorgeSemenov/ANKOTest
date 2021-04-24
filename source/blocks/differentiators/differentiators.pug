@@ -1,0 +1,9 @@
+include __lists/differentiators__lists.pug
+include ../list/list.pug
+include ../title/title.pug
+if modifier == undefined
+    - modifier = {};
+mixin differentiators(modifier)
+  .differentiators&attributes(attributes)
+    +title(modifier)
+    +differentiators__lists(modifier)

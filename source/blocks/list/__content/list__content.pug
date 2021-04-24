@@ -1,0 +1,4 @@
+mixin list__content(modifier)
+  if modifier["itemsArray"] == undefined
+    - modifier["itemsArray"] = "empty__itemsArray";
+  .list__content&attributes(attributes)

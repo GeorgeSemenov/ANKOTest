@@ -1,2 +1,6 @@
+include ../../img/svg/arrowSVG.pug
 mixin link(modifier)
-  .link&attributes(attributes)
+  if modifier["linkText"] == undefined
+    - modifier["linkText"] = "empty__linkText";
+  a.link(href="#!")&attributes(attributes)!=modifier.linkText
+    +arrowSVG(modifier)(class="link__arrowSVG")

@@ -3,3 +3,6 @@ include __measure/advantage__measure.pug
 include __number/advantage__number.pug
 mixin advantage(modifier)
   .advantage&attributes(attributes)
+    +advantage__number(modifier)
+    +advantage__measure(modifier)
+    +advantage__description(modifier)

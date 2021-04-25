@@ -1,2 +1,4 @@
 mixin advantage__description(modifier)
-  .advantage__description&attributes(attributes)
+  if modifier["description"] == undefined
+    - modifier["description"] = "empty__description";
+  p.advantage__description&attributes(attributes)!=modifier.description

@@ -1,2 +1,4 @@
 mixin advantage__number(modifier)
-  .advantage__number&attributes(attributes)
+  if modifier["number"] == undefined
+    - modifier["number"] = "empty__number";
+  p.advantage__number&attributes(attributes)!=modifier.number

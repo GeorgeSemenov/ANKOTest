@@ -1,7 +1,12 @@
 /* no sense variables */
 $black : #000000;
+$white : #fff;
 
-$redc25: #EE1C25;
+$gray080  : #808080;
+
+$redc25   : #EE1C25;
+
+
 
 /* variables with sense */
 /* *********************************************************************** */
@@ -12,3 +17,10 @@ $list__content--color : $black;
 $list__head--color : $redc25;
 
 $about-us__text--color: $black;
+
+$advantage__number--color : $redc25;
+$advantage__measure--color: $redc25;
+$advantage__description--color: $gray080;
+
+$link--color: $black;
+$link__arrowSVG-hover--BGColor: $gray080;

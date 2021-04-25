@@ -1,4 +1,9 @@
 @import '__description/advantage__description';
 @import '__measure/advantage__measure';
 @import '__number/advantage__number';
-.advantage {}
+.advantage {
+  font-family: 'PT_Sans' ,"Georgia" , "Serif";
+  font-style: normal;
+  font-weight: normal;
+  max-width: 134px;
+}

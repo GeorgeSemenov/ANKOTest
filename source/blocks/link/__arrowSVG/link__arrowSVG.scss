@@ -1,0 +1,15 @@
+.link__arrowSVG {
+  border-radius: 100%;
+  margin-left: 40px;
+  position: relative;
+  top: 3px;
+  @media (max-width: md - 1px) {
+    margin-left: 28px;
+  }
+}
+
+.link:hover{
+  .link__arrowSVG{
+    background-color: $link__arrowSVG-hover--BGColor;
+  }
+}

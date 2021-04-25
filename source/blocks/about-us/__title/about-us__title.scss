@@ -1,3 +1,7 @@
 .about-us__title {
   margin-bottom: 19px;
+
+  @media (max-width: $md - 1px) {
+    margin-bottom: -8px;
+  }
 }

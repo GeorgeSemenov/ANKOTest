@@ -1,1 +1,15 @@
-.link {}
+@import '__arrowSVG/link__arrowSVG';
+.link {
+  text-decoration: none;
+  font-family: 'PT_Sans' ,"Georgia" , "Serif";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: $link--color;
+
+  @media (max-width: $md - 1px) {
+    font-size: 12px;
+  }
+}

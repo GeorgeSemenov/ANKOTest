@@ -1,1 +1,6 @@
-.advantage__number {}
+.advantage__number {
+  font-size: 32px;
+  line-height: 24px;
+  color: $advantage__number--color;
+  margin-bottom: 6px;
+}

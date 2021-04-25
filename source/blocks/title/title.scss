@@ -7,6 +7,10 @@
   line-height: 41px;
   color: $title--color;
 
+  @media (max-width: $md - 1px) {
+    font-size: 18px;
+  }
+
   &.title_theme_main{
     font-size: 48px;
     line-height: 62px;

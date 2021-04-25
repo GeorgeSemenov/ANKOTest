@@ -1,0 +1,11 @@
+include __advantage-container/about-us__advantage-container.pug
+include __text/about-us__text.pug
+include __content/about-us__content.pug
+include ../advantage/advantage.pug
+include ../title/title.pug
+mixin about-us(modifier)
+  if modifier == undefined
+    - modifier = {};
+  .about-us&attributes(attributes)
+    +title(modifier)(class="about-us__title")
+    +about-us__content(modifier)

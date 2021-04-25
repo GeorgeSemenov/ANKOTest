@@ -1,1 +1,9 @@
-.list__content {}
+.list__content {
+  font-weight: normal;
+  line-height: 24px;
+  color: $list__content--color;
+  @media (max-width: $md - 1px) {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}

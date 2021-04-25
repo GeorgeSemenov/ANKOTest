@@ -1,1 +1,15 @@
-.list__item {}
+.list__item {
+    margin-bottom: 24px;
+  @media (max-width: $md - 1px) {
+    display: none;
+    margin-bottom: 0;
+  }
+  &.list__item_mobile_visible{
+    display: block;
+  }
+  &.list__item_desktop_invisible{
+    @media (min-width: $md) {
+      display: none;
+    }
+  }
+}

@@ -1,2 +1,6 @@
 mixin differentiators__lists(modifier)
+  if modifier["listsArr"] == undefined
+    - modifier["listsArr"] = [{head:"empty__listsArray"}];
   .differentiators__lists&attributes(attributes)
+    each list in modifier.listsArr
+      +list(list)(class=list.modifier)

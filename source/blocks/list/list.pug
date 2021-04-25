@@ -2,10 +2,30 @@ include __item/list__item.pug
 include __content/list__content.pug
 include __head/list__head.pug
 include __img/list__img.pug
+include ../../img/svg/lampSVG.pug
+include ../../img/svg/headSVG.pug
+include ../../img/svg/handsSVG.pug
+include ../../img/svg/shieldSVG.pug
 mixin list(modifier)
   if modifier == undefined
     - modifier = {};
+  if attributes == undefined
+    - attributes = {class:""};
+  if attributes.class == undefined
+    - attributes.class = "";
+
+  if ( !(attributes.class.indexOf('list_with-image_lamp')==-1) ) 
+    - modifier.imgName = "lamp";
+  if ( !(attributes.class.indexOf('list_with-image_head')==-1) ) 
+    - modifier.imgName = "head";
+  if ( !(attributes.class.indexOf('list_with-image_hands')==-1) ) 
+    - modifier.imgName = "hands";
+  if ( !(attributes.class.indexOf('list_with-image_shield')==-1) ) 
+    - modifier.imgName = "shield";
+
   .list&attributes(attributes)
-    +list__img(modifier)
+    if ( !(attributes.class.indexOf('list_with-image_')==-1) ) 
+      - modifier.someProperty = true;
+      +list__img(modifier)
     +list__head(modifier)
     +list__content(modifier)

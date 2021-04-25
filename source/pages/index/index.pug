@@ -13,5 +13,78 @@ html(lang="ru")
   body
     //- +header()
     main
-      +differentiators-and-about-us-screen({})
+      +differentiators-and-about-us-screen({
+        differentiators :{
+          title: 'Differentiators',
+          listsArr:[
+          {
+            modifier  : "list_with-image_lamp list_mobile_visible list_mobile-width_70",
+            head    : "Energy",
+            itemsArr  : [
+              {
+                text:"Passion to&nbsp;perform", 
+              },
+              {
+                text:"Passion to&nbsp;perform", 
+                modifier: "list__item_desktop_invisible list__item_mobile_visible"
+              },
+            ]
+          },
+          {
+            modifier  : "list_with-image_shield list_mobile_visible list_mobile-width_155",
+            head    : "Safety",
+            itemsArr  : [
+              {
+                text:"No accidents, safety program, PPE", 
+              },
+              {
+                text:"No accidents, safety program, PPE", 
+                modifier: "list__item_desktop_invisible list__item_mobile_visible"
+              },
+            ]
+          },
+          {
+            modifier  : "list_with-image_head list_mobile_visible list_mobile-width_155 list_theme_extra-head-margin",
+            head    : "Intelligence",
+            itemsArr  : [
+              {
+                text:"State-of-the-art computer software</br>for collaboration and transparency"
+              },
+              {
+                text: "Knowledge of Code,<br/> University", 
+              },
+              {
+                text: "Engineering", 
+              },
+              {
+                text: "Prefabrication", 
+              },
+              {
+                text:"Knowledge of Code, University, Engineering, Prefabrication", 
+                modifier: "list__item_desktop_invisible list__item_mobile_visible"
+              },
+            ]
+          },
+          {
+            modifier  : "list_with-image_hands list_mobile_visible list_mobile-width_155 list_theme_extra-head-margin",
+            head    : "Integrity",
+            itemsArr  : [
+              {text:"Zero tolerance to Code violations"},
+              {text:"Zero tolerance to Safety violations "},
+              {text:"Search for solutions, better for the Client"},
+              {text:"Support for our top performers"},
+              {
+                text:"Search for solutions, better <br/>for the Client", 
+                modifier: "list__item_desktop_invisible list__item_mobile_visible"
+              },
+            ]
+          },
+          ]
+        },
+        aboutUs : {
+          title: 'About us',
+          textPartOne: "Electrica, Inc. is a committed C-10 specialty electrical contractor, located in San Diedo, California, USA.",
+          textPartTwo:"We work to help the patients to live and be healthy, and bring our best to fill the corridors of the hospital with smiles, not tears.",
+        }
+      })
     //- +footer({})

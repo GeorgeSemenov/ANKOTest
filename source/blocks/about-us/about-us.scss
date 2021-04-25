@@ -1,0 +1,9 @@
+@import '__title/about-us__title';
+@import '__advantage-container/about-us__advantage-container';
+@import '__text/about-us__text';
+@import '__content/about-us__content';
+@import '../advantage/advantage';
+@import '../title/title';
+.about-us {
+  max-width: 300px;
+}

@@ -1,1 +1,17 @@
-.list__img {}
+.list__img {
+  position: absolute;
+  top: 0;
+  left: -22px;
+  transform: translateX(-100%);
+}
+.list_mobile_visible {
+  .list__img{
+    @media (max-width: $md - 1px) {
+      position: relative;
+      top: auto;
+      left: auto;
+      transform: translateX(0);
+      margin-bottom: 13px;
+    }
+  }
+}

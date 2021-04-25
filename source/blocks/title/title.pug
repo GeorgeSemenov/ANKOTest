@@ -1,2 +1,11 @@
 mixin title(modifier)
-  h2.title&attributes(attributes)!=modifier.title
+  if modifier["title"] == undefined
+    - modifier["title"] = "empty__title";
+  if attributes == undefined
+    - attributes = {};
+  if attributes["class"] == undefined
+    - attributes["class"] = "";
+  if ( (attributes.class.indexOf('title_theme_main')==-1) ) 
+    h2.title&attributes(attributes)!=modifier.title
+  else
+    h1.title&attributes(attributes)!=modifier.title

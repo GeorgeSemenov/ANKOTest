@@ -1,1 +1,16 @@
-.list__head {}
+.list__head {
+  font-weight: bold;
+  line-height: 20px;
+  color: $list__head--color;
+  margin-bottom: 8px;
+  @media (max-width: $md - 1px) {
+    font-size: 16px;
+    margin-bottom: 2px;
+  }
+}
+
+.list_theme_extra-head-margin{
+  .list__head {
+    margin-bottom: 17px;
+  }
+}

@@ -1,2 +1,10 @@
 mixin list__img(modifier)
-  .list__img&attributes(attributes)
+  case modifier.imgName
+    when "lamp"
+      +lampSVG(class="list__img")&attributes(attributes)
+    when "head"
+      +headSVG(class="list__img")&attributes(attributes)
+    when "hands"
+      +handsSVG(class="list__img")&attributes(attributes)
+    when "shield"
+      +shieldSVG(class="list__img")&attributes(attributes)

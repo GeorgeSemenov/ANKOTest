@@ -1,5 +1,36 @@
+@import '_mobile_visible/list_mobile_visible';
+@import '__item/_mobile_joined/list__item_mobile_joined';
+@import '__item/_mobile_visible/list__item_mobile_visible';
 @import '__item/list__item';
 @import '__content/list__content';
 @import '__head/list__head';
 @import '__img/list__img';
-.list {}
+.list {
+  font-family: 'PT_Sans' ,"Georgia" , "Serif";
+  font-style: normal;
+  font-size: 18px;
+  position: relative;
+  margin-left: 59px;
+  max-width: 250px;
+  @media (max-width: $md - 1px) {
+    text-align: center;
+    display: none;
+  }
+
+  &.list_mobile_visible{
+    @media (max-width: $md - 1px) {
+      display: block;
+      margin-left: 0;
+    }
+  }
+  &.list_mobile-width_70{
+    @media (max-width: $md - 1px) {
+      max-width: 70px;
+    }
+  }
+  &.list_mobile-width_155{
+    @media (max-width: $md - 1px) {
+      max-width: 155px;
+    }
+  }
+}

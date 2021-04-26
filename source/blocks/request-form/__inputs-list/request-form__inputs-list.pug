@@ -1,2 +1,6 @@
 mixin request-form__inputs-list(modifier)
+  if modifier["inputsArr"] == undefined
+    - modifier["inputsArr"] = [{labels: "empty__inputsArr"}];
   .request-form__inputs-list&attributes(attributes)
+    each input in modifier.inputsArr
+      +request-form__input-container(input)

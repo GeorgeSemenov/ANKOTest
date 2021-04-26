@@ -1,1 +1,8 @@
-.request-form__input-container {}
+.request-form__input-container {
+  width: 480px;
+  margin-bottom: 16px;
+  @media (max-width: $md - 1px){
+    width: 100%;
+    margin-bottom: 11px;
+  }
+}

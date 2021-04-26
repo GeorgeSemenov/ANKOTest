@@ -1,1 +1,8 @@
-.request-form__button {}
+.request-form__button {
+  display: flex;
+  @include mx(auto);
+  margin-bottom: 43px;
+  @media (max-width: $md - 1px){
+    margin-bottom: 37px;
+  }
+}

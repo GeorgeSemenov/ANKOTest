@@ -1,1 +1,12 @@
-.request-form__label {}
+.request-form__label {
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: $request-form__label--color;
+  display: block;
+
+  @media (max-width: $md - 1px){
+    font-size: 10px;
+    margin-bottom: -4px;
+  }
+}

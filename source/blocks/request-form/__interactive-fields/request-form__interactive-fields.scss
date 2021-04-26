@@ -1,1 +1,9 @@
-.request-form__interactive-fields {}
+.request-form__interactive-fields {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 39px;
+  @media (max-width: $lg - 1px){
+    flex-direction: column;
+    align-items: center;
+  }
+}

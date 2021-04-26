@@ -10,4 +10,19 @@
 @import '__title/request-form__title';
 @import '../title/title';
 @import '../button/button';
-.request-form {}
+.request-form {
+  max-width: 1100px;
+  @include mx(auto);
+  border: 10px $request-form--border-color solid;
+  box-sizing: border-box;
+  position: relative;
+  padding-top: 37px;
+  font-family: 'PT_Sans' ,"Georgia" , "Serif";
+  @include px(40px);
+
+  @media (max-width: $md - 1px){
+    padding-right: 12px;
+    padding-left: 15px;
+    padding-top: 19px;
+  }
+}

@@ -1,2 +1,4 @@
 mixin request-form__input-container(modifier)
   .request-form__input-container&attributes(attributes)
+    +request-form__label(modifier)(for=modifier.id)
+    +request-form__input(modifier)(id=modifier.id name=modifier.name type=modifier.type placeholder=modifier.placeholder)

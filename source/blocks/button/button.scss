@@ -1,1 +1,32 @@
-.button {}
+@import '_size_standard/button_size_standard';
+.button {
+  box-sizing: border-box;
+  @include px(10px);
+  font-family: 'PT_Sans' ,"Georgia" , "Serif";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $button--color;
+  background-color: $button--BGColor;
+  display: block;
+  @include py(8px);
+  &:hover{
+    background-color: darken($button--BGColor, 10%)
+  }
+  &:active{
+    background-color: darken($button--BGColor, 20%)
+  }
+
+  &.button_size_standard{
+    width: 200px;
+    @media (max-width: $md - 1px){
+      width: 160px;
+    }
+  }
+  @media (max-width: $md - 1px){
+    font-size: 12px;
+  }
+}

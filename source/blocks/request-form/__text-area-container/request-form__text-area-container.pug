@@ -1,2 +1,4 @@
 mixin request-form__text-area-container(modifier)
   .request-form__text-area-container&attributes(attributes)
+    +request-form__label(modifier)(for=modifier.id)
+    +request-form__text-area(modifier)(id=modifier.id name=modifier.name placeholder=modifier.placeholder)

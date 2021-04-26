@@ -10,6 +10,7 @@ include ../title/title.pug
 include ../button/button.pug
 mixin request-form(modifier)
   form.request-form&attributes(attributes)
-    +title(modifier)
+    +title(modifier)(class="request-form__title")
     +request-form__description(modifier)
     +request-form__interactive-fields(modifier)
+    +button(modifier)(class="request-form__button button_size_standard")

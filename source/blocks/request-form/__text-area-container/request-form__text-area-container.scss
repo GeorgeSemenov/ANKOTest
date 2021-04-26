@@ -1,1 +1,7 @@
-.request-form__text-area-container {}
+.request-form__text-area-container {
+  width: 480px;
+  @media (max-width: $md - 1px){
+    width: 100%;
+    margin-bottom: 50px;
+  }
+}

@@ -3,13 +3,14 @@ $black : #000000;
 $white : #fff;
 
 $gray080  : #808080;
+$grayEEE  : #EEEEEE;
 
 $redc25   : #EE1C25;
-
-
+$red828   : #EA2828;
 
 /* variables with sense */
 /* *********************************************************************** */
+$body--BGColor: $white;
 
 $title--color: $black;
 
@@ -24,3 +25,16 @@ $advantage__description--color: $gray080;
 
 $link--color: $black;
 $link__arrowSVG-hover--BGColor: $gray080;
+
+$request-form--border-color      : $grayEEE;
+$request-form__description--color: $gray080;
+$request-form__title--BGColor    : $body--BGColor;
+$request-form__label--color      : $gray080;
+$request-form__input--color      : $black;
+$request-form__input-placeholder--color: $grayEEE;
+$request-form__input--BColor: $grayEEE;
+$request-form__text-area--BColor: $request-form__input--BColor;
+$request-form__text-area-placeholder--color: $request-form__input-placeholder--color;
+
+$button--color: $white;
+$button--BGColor: $red828;

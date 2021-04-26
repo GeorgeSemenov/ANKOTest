@@ -9,6 +9,8 @@ html{
 }
 body{
   margin:0;
+  @include px(8px);
+  background-color: $body--BGColor;
   // margin-left: 50px;
   // margin-top: 50px;
 }

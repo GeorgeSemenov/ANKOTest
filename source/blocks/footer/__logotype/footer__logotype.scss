@@ -1,0 +1,6 @@
+.footer__logotype {
+  margin-bottom: 8px;
+  @media (max-width: $md - 1px){
+    max-width: 117px;
+  }
+}

@@ -1,0 +1,7 @@
+mixin socials__social(modifier)
+  if ( !(attributes.class.indexOf('socials__social_instagram')==-1) ) 
+    +instagramSVG(modifier)(class="socials__social")
+  if ( !(attributes.class.indexOf('socials__social_facebook')==-1) ) 
+    +facebookSVG(modifier)(class="socials__social")
+  if ( !(attributes.class.indexOf('socials__social_twitter')==-1) ) 
+    +twitterSVG(modifier)(class="socials__social")

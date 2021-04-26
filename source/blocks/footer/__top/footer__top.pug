@@ -1,0 +1,5 @@
+mixin footer__top(modifier)
+  .footer__top&attributes(attributes)
+    +footer__logo-and-contacts(modifier)
+    +footer__who-we-are-container(modifier.whoWeAreList)
+    +list(modifier.whatWeDoList)(class="footer__list list_theme_footer")

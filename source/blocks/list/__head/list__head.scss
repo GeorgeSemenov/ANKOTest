@@ -25,3 +25,10 @@
     }
   }
 }
+
+.list_theme_footer{
+  .list__head{
+    margin-bottom: 17px;
+    color: $list_theme_footer__head--color;
+  }
+}

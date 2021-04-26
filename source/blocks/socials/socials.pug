@@ -1,0 +1,9 @@
+include __social/socials__social.pug
+include ../../img/svg/twitterSVG.pug
+include ../../img/svg/facebookSVG.pug
+include ../../img/svg/instagramSVG.pug
+mixin socials(modifier)
+  .socials&attributes(attributes)
+    +socials__social(modifier)(class="socials__social_instagram")
+    +socials__social(modifier)(class="socials__social_facebook")
+    +socials__social(modifier)(class="socials__social_twitter")

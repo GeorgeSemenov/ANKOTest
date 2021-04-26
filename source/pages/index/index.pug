@@ -2,7 +2,7 @@
 //- include ../../blocks/header/header.pug
 include ../../blocks/differentiators-and-about-us-screen/differentiators-and-about-us-screen.pug
 include ../../blocks/request-form/request-form.pug
-//- include ../../blocks/footer/footer.pug
+include ../../blocks/footer/footer.pug
 doctype html
 html(lang="ru")
   head
@@ -135,4 +135,56 @@ html(lang="ru")
         },
         buttonText: "Send request"
       })
-    //- +footer({})
+    +footer({
+      contactsArr:[
+        {
+          text: "619-551-0828",
+          modifier: "footer__contact_phone"
+        },
+        {
+          text: "info@electrica-inc.com",
+          modifier: "footer__contact_email"
+        },
+        {
+          text: "3534 Caminito El Rincon #41 San Diego, CA 92130",
+          modifier: "footer__contact_adress"
+        },
+      ],
+      whoWeAreList: {
+        head: "Who we are",
+        itemsArr:[
+          {
+            text: "About us"
+          },
+          {
+            text: "Resources"
+          },
+          {
+            text: "Blog"
+          },
+          {
+            text: "Careers"
+          },
+        ]
+      },
+      whatWeDoList: {
+        head: "What we do",
+        itemsArr:[
+          {
+            text: "Residential"
+          },
+          {
+            text: "Commercial"
+          },
+          {
+            text: "Industrial"
+          },
+          {
+            text: "Design-Build"
+          },
+          {
+            text: "Service"
+          },
+        ]
+      }
+    })

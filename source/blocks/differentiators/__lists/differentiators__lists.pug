@@ -3,4 +3,4 @@ mixin differentiators__lists(modifier)
     - modifier["listsArr"] = [{head:"empty__listsArray"}];
   .differentiators__lists&attributes(attributes)
     each list in modifier.listsArr
-      +list(list)(class=list.modifier)
+      +list(list)(class=(list.modifier + " differentiators__list"))

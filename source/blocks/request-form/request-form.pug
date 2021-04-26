@@ -1,0 +1,15 @@
+include __interactive-fields/request-form__interactive-fields.pug
+include __text-area/request-form__text-area.pug
+include __text-area-container/request-form__text-area-container.pug
+include __input/request-form__input.pug
+include __label/request-form__label.pug
+include __input-container/request-form__input-container.pug
+include __inputs-list/request-form__inputs-list.pug
+include __description/request-form__description.pug
+include ../title/title.pug
+include ../button/button.pug
+mixin request-form(modifier)
+  form.request-form&attributes(attributes)
+    +title(modifier)
+    +request-form__description(modifier)
+    +request-form__interactive-fields(modifier)

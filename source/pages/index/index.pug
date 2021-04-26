@@ -1,6 +1,7 @@
 //- include ../../blocks/favicon/favicon.pug
 //- include ../../blocks/header/header.pug
 include ../../blocks/differentiators-and-about-us-screen/differentiators-and-about-us-screen.pug
+include ../../blocks/request-form/request-form.pug
 //- include ../../blocks/footer/footer.pug
 doctype html
 html(lang="ru")
@@ -44,7 +45,7 @@ html(lang="ru")
             ]
           },
           {
-            modifier  : "list_with-image_head list_mobile_visible list_mobile-width_155 list_theme_extra-head-margin",
+            modifier  : "list_with-image_head list_mobile_visible list_mobile-width_155 list_desktop_extra-head-margin list_mobile_lack-head-margin",
             head    : "Intelligence",
             itemsArr  : [
               {
@@ -66,7 +67,7 @@ html(lang="ru")
             ]
           },
           {
-            modifier  : "list_with-image_hands list_mobile_visible list_mobile-width_155 list_theme_extra-head-margin",
+            modifier  : "list_with-image_hands list_mobile_visible list_mobile-width_155 list_desktop_extra-head-margin list_mobile_lack-head-margin",
             head    : "Integrity",
             itemsArr  : [
               {text:"Zero tolerance to Code violations"},
@@ -98,6 +99,39 @@ html(lang="ru")
             }
           ],
           linkText : "Learn more about us"
+        }
+      })
+      +request-form({
+        title: "Request a quote",
+        description: "We appreciate every partner, regardless of the size of his possibilities and try to find an individual approach to each client.",
+        inputsArr: [
+          {
+            id: "input-name",
+            name: "name",
+            type: "text",
+            placeholder: "Alexandr",
+            label: "Your name",
+          },
+          {
+            id: "input-email",
+            name: "email",
+            type: "email",
+            placeholder: "alexander@gmail.com",
+            label: "E-mail",
+          },
+          {
+            id: "input-phone",
+            name: "phone",
+            type: "tel",
+            placeholder: "Phone number",
+            label: "Phone",
+          },
+        ],
+        textArea: {
+          id: "message",
+          name: "message",
+          placeholder: "",
+          label: "Message"
         }
       })
     //- +footer({})

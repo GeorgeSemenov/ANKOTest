@@ -9,8 +9,19 @@
   }
 }
 
-.list_theme_extra-head-margin{
+.list_desktop_extra-head-margin{
   .list__head {
-    margin-bottom: 17px;
+    @media (min-width: $md) {
+      margin-bottom: 17px;
+    }
+  }
+}
+
+
+.list_mobile_lack-head-margin{
+  .list__head {
+    @media (max-width: $md - 1px) {
+      margin-bottom: 6px;
+    }
   }
 }

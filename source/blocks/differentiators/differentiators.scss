@@ -2,4 +2,8 @@
 @import '__lists/differentiators__lists';
 @import '../title/title';
 @import '../list/list';
-.differentiators {}
+.differentiators {
+  @media (max-width: $md - 1px) {
+    text-align: center;
+  }
+}

@@ -8,6 +8,16 @@
   }
 }
 
+.link_theme_main{
+  .link__arrowSVG {
+    margin-left: 20px;
+    background-color: $link_theme_main__arrowSVG--BGColor;
+    @media (max-width: $md - 1px){
+      margin-left: 3px;
+    }
+  }
+}
+
 .link:hover{
   .link__arrowSVG{
     background-color: $link__arrowSVG-hover--BGColor;

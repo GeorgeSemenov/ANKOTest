@@ -1,2 +1,3 @@
 mixin list__head(modifier)
-  h3.list__head&attributes(attributes)!=modifier.head
+  - var tag = modifier["_headTag"];
+  #{tag}.list__head&attributes(attributes)!=modifier.head

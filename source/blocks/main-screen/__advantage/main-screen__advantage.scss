@@ -1,0 +1,12 @@
+.main-screen__advantage {
+  margin-right: 63px;
+  &:last-child{
+    margin-right: 0px;
+  }
+  @media (max-width: $md - 1px){
+    margin-right: 1px;
+    &:last-child{
+      margin-right: 0px;
+    }
+  }
+}

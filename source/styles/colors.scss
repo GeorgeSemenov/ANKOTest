@@ -1,4 +1,5 @@
 /* no sense variables */
+$inherit: inherit;
 $black : #000000;
 $white : #fff;
 
@@ -14,6 +15,7 @@ $body--BGColor: $white;
 
 $title--color: $black;
 
+
 $list__content--color : $black;
 $list__head--color : $redc25;
 $list_theme_footer__head--color: $black;
@@ -23,9 +25,15 @@ $about-us__text--color: $black;
 $advantage__number--color : $redc25;
 $advantage__measure--color: $redc25;
 $advantage__description--color: $gray080;
+$advantage_theme_main--color : $gray080;
+
+$main-screen__background-img--BColor: $white;
+$main-screen__description : $black;
+$main-screen--BColor: $grayEEE;
 
 $link--color: $black;
 $link__arrowSVG-hover--BGColor: $gray080;
+$link_theme_main__arrowSVG--BGColor : $white;
 
 $request-form--border-color      : $grayEEE;
 $request-form__description--color: $gray080;

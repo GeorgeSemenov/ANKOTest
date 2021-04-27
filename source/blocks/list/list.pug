@@ -13,7 +13,11 @@ mixin list(modifier)
     - attributes = {class:""};
   if attributes.class == undefined
     - attributes.class = "";
+  if modifier["_headTag"] == undefined
+    - modifier["_headTag"] = "h3";
 
+  if ( !(attributes.class.indexOf('list_headTag_h2')==-1) ) 
+    - modifier._headTag = "h2";
   if ( !(attributes.class.indexOf('list_with-image_lamp')==-1) ) 
     - modifier.imgName = "lamp";
   if ( !(attributes.class.indexOf('list_with-image_head')==-1) ) 

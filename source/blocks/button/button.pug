@@ -3,4 +3,4 @@ mixin button(modifier)
     - modifier["buttonText"] = "empty__buttonText";
   if modifier["buttonType"] == undefined
     - modifier["buttonType"] = "submit";
-  .button&attributes(attributes)(type=modifier.buttonType)!=modifier.buttonText
+  button.button&attributes(attributes)(type=modifier.buttonType)!=modifier.buttonText

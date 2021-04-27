@@ -14,5 +14,10 @@
   &.title_theme_main{
     font-size: 48px;
     line-height: 62px;
+
+    @media (max-width: $md - 1px){
+      font-size: 22px;
+      line-height: 30px;
+    }
   }
 }

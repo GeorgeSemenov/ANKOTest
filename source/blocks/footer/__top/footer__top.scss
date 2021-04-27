@@ -20,7 +20,10 @@
     width: 90%;
     top: 0;
     @media (max-width: $md - 1px){
-      width: 105%;
+      width: 100%;
+    }
+    @media (max-width: $sm - 1px){
+      width: 105%
     }
   }
   &:after{

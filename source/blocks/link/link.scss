@@ -1,3 +1,4 @@
+@import '_theme_main/link_theme_main';
 @import '__arrowSVG/link__arrowSVG';
 .link {
   text-decoration: none;
@@ -11,5 +12,11 @@
 
   @media (max-width: $md - 1px) {
     font-size: 12px;
+  }
+
+  &.link_theme_main{
+    @media (max-width: $md - 1px){
+      line-height: 16px;
+    }
   }
 }

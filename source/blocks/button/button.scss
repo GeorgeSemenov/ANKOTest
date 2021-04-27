@@ -1,3 +1,4 @@
+@import '_theme_main/button_theme_main';
 @import '_size_standard/button_size_standard';
 .button {
   box-sizing: border-box;
@@ -28,5 +29,12 @@
   }
   @media (max-width: $md - 1px){
     font-size: 12px;
+  }
+  &.button_theme_main{
+    @media (max-width: $md - 1px){
+      padding-top: 5px;
+      padding-bottom: 3px;
+      width: 150px;
+    }
   }
 }

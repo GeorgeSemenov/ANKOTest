@@ -1,0 +1,13 @@
+include ../link/link.pug
+include ../button/button.pug
+include ../advantage/advantage.pug
+include ../title/title.pug
+include __interactive-elements/main-screen__interactive-elements.pug
+include __advantages-list/main-screen__advantages-list.pug
+include __description/main-screen__description.pug
+include __text-content/main-screen__text-content.pug
+include __background-img/main-screen__background-img.pug
+mixin main-screen(modifier)
+  .main-screen&attributes(attributes)
+    +main-screen__background-img(modifier)
+    +main-screen__text-content(modifier)

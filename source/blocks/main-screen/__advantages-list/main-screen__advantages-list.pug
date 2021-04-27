@@ -1,0 +1,6 @@
+mixin main-screen__advantages-list(modifier)
+  .main-screen__advantages-list&attributes(attributes)
+    if modifier["advantagesArr"] == undefined
+      - modifier["advantagesArr"] = [{measure: "empty__advantagesArr"}];
+    each advantage in modifier.advantagesArr
+      +advantage(advantage)(class="main-screen__advantage advantage_theme_main")

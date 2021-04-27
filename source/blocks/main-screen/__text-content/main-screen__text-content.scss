@@ -1,0 +1,9 @@
+.main-screen__text-content {
+  z-index: 1;
+  position: relative;
+  max-width: 394px;
+  @media (max-width: $md - 1px){
+    padding-left: 19px;
+    max-width: 91%;
+  }
+}

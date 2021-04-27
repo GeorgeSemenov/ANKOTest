@@ -1,0 +1,35 @@
+@import '../link/link';
+@import '../button/button';
+@import '../advantage/advantage';
+@import '../title/title';
+@import '__link/main-screen__link';
+@import '__button/main-screen__button';
+@import '__interactive-elements/main-screen__interactive-elements';
+@import '__advantage/main-screen__advantage';
+@import '__advantages-list/main-screen__advantages-list';
+@import '__description/main-screen__description';
+@import '__title/main-screen__title';
+@import '__text-content/main-screen__text-content';
+@import '__background-img/main-screen__background-img';
+.main-screen {
+  font-family: 'PT_Sans' ,"Georgia" , "Serif";
+  font-style: normal;
+  font-weight: normal;
+  position: relative;
+  max-width: 1200px;
+  @include mx(auto);
+  padding-top: 58px;
+  padding-left: 71px;
+  padding-bottom: 61px;
+  margin-bottom: 84px;
+
+  @media (max-width: $md - 1px){
+    @include mx(10px);
+    @include px(0px);
+    border-radius: 8px;
+    border: solid 1px $main-screen--BColor;
+    padding-top: 0px;
+    padding-bottom: 20px;
+    margin-bottom: 35px;
+  }
+}

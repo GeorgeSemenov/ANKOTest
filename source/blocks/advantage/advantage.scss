@@ -1,3 +1,4 @@
+@import '_theme_main/advantage_theme_main';
 @import '__description/advantage__description';
 @import '__measure/advantage__measure';
 @import '__number/advantage__number';
@@ -6,4 +7,12 @@
   font-style: normal;
   font-weight: normal;
   max-width: 134px;
+
+  &.advantage_theme_main{
+    color: $advantage_theme_main--color;
+    max-width: 156px;
+    @media (max-width: $md - 1px){
+      max-width: 130px;
+    }
+  }
 }

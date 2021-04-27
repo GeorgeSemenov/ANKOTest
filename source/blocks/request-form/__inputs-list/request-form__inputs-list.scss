@@ -1,3 +1,11 @@
 .request-form__inputs-list {
-  width: 100%;
+  // width: 100%;
+  @media (max-width: $lg - 1px){
+    width: 480px;
+    @include mx(auto);
+  }
+  @media (max-width: $md - 1px){
+    width: 100%;
+    @include mx(0px);
+  }
 }

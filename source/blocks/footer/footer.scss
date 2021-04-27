@@ -12,8 +12,16 @@
 @import '__logotype/footer__logotype';
 @import '__top/footer__top';
 .footer {
-  padding-top: 139px;
+  padding-top: 86px;
   font-family: 'PT_Sans' ,"Georgia" , "Serif";
   max-width: 1097px;
   @include mx(auto);
+
+  @media (max-width: $md - 1px){
+    padding-top: 39px;
+
+  }
+  @media print{
+    display: none;
+  }
 }

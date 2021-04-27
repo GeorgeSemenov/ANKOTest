@@ -1,1 +1,14 @@
-.footer__sign {}
+.footer__sign {
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  color: $footer__sign--color;
+  padding-left: 16px;
+  @media (max-width: $xl - 1px){
+    padding-left: 0px;
+  }
+  @media (max-width: $md - 1px){
+    font-size: 10px;
+    line-height: 14px;
+  }
+}

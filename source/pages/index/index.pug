@@ -1,4 +1,4 @@
-//- include ../../blocks/favicon/favicon.pug
+include ../../blocks/favicon/favicon.pug
 //- include ../../blocks/header/header.pug
 include ../../blocks/differentiators-and-about-us-screen/differentiators-and-about-us-screen.pug
 include ../../blocks/request-form/request-form.pug
@@ -10,7 +10,7 @@ html(lang="ru")
     meta(name="viewport", content="initial-scale=1.0, width=device-width")
     title ANKOTest
     //-В папке build будет лежать файл фавикона, строка которая находится ниже позволит подцепить этот файл
-    //- +favicon()
+    +favicon()
   body
     //- +header()
     main
@@ -186,5 +186,6 @@ html(lang="ru")
             text: "Service"
           },
         ]
-      }
+      },
+      sign: "© 2018 Electrica, Inc. All rights reserved",
     })

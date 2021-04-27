@@ -1,1 +1,10 @@
-.footer__logo-and-contacts {}
+.footer__logo-and-contacts {
+  margin-right: 110px;
+  @media (max-width: $lg - 1px){
+    margin-right: 40px;
+  }
+  @media (max-width: $md - 1px){
+    margin-bottom: 19px;
+    margin-right: 0px;
+  }
+}

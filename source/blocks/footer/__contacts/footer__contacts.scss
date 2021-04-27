@@ -4,11 +4,10 @@
   color: $footer__contacts--color;
   margin-left: 56px;
   max-width: 290px;
-  margin-right: 110px;
   @media (max-width: $md - 1px){
     font-size: 12px;
     line-height: 18px;
-    margin-right: 0px;
-
+    margin-left: 0px;
+    max-width: 220px;
   }
 }

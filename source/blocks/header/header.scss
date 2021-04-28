@@ -1,40 +1,45 @@
-@import '_theme_white/header_theme_white';
-@import '__item-content/header__item-content';
-@import '_theme_small/header_theme_small';
-@import '_expanded/header_expanded';
-@import '../logo/logo';
-@import '__content/header__content';
-@import '__item/header__item';
-@import '__navigation/header__navigation';
-@import '__sandwich-ico-container/header__sandwich-ico-container';
 @import '__sandwich-ico/header__sandwich-ico';
-@import '__logo/header__logo';
+@import '__sandwich-ico-container/header__sandwich-ico-container';
+@import '__logotype/header__logotype';
+@import '__service-href/header__service-href';
+@import '__service-item/header__service-item';
+@import '__service-item/header__service-item';
+@import '__services/header__services';
+@import '__nav-services/header__nav-services';
+@import '__emergency-tel/header__emergency-tel';
+@import '__emergency-text/header__emergency-text';
+@import '__emergency-text-container/header__emergency-text-container';
+@import '__emergency-img/header__emergency-img';
+@import '__emergency-block/header__emergency-block';
+@import '__page-href/header__page-href';
+@import '__page-item/header__page-item';
+@import '__pages/header__pages';
+@import '__nav-pages/header__nav-pages';
+@import '__search/header__search';
+@import '../logotype/logotype';
 .header {
+  font-family: 'PT_Sans' ,"Georgia" , "Serif";
   display: flex;
-  align-items: flex-end;
-  padding-top: 48px;
-  padding-bottom: 0;
-  padding-left: 83px;
-  padding-right: 86px;
-  background-color: $header--BGColor;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  box-sizing: border-box;
-  z-index: 10;
-  @include transition();
-
+  max-width: 100%;
+  flex-wrap: wrap;
+  position: relative;
   @media (max-width: $md - 1px){
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-
-  &.header_theme_small{
-    @include py(15px);
-  }
-  &.header_theme_white{
-    background-color: $header_theme_white--BGColor;
+    padding-top: 6px;
+    height: 34px;
+    overflow: hidden;
+    @include transition();
+    &.header_expanded{
+      height: 250px;
+    }
+    &:after{
+      content: '';
+      position: absolute;
+      width: 100%;
+      left: 0;
+      top: 39px;
+      height: 1px;
+      background-color: $header__mobile-devider--BGColor;
+    }
   }
   @media print{
     display: none;

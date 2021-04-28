@@ -1,0 +1,10 @@
+.footer__about-us-list {
+  padding-top: 4px;
+  font-size: 18px;
+  position: relative;
+  max-width: 250px;
+  margin-bottom: 17px;
+  @media (max-width: $md - 1px){
+    display: none;
+  }
+}

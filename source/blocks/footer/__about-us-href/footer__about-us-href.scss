@@ -1,0 +1,7 @@
+.footer__about-us-href {
+  text-decoration: none;
+  color: $footer__about-us-href--color;
+  &:hover{
+    color: $footer__about-us-href-hover--color;
+  }
+}

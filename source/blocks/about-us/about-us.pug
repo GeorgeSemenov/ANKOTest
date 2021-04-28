@@ -7,6 +7,6 @@ include ../link/link.pug
 mixin about-us(modifier)
   if modifier == undefined
     - modifier = {};
-  .about-us&attributes(attributes)
+  aside.about-us&attributes(attributes)
     +title(modifier)(class="about-us__title")
     +about-us__content(modifier)

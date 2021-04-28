@@ -17,7 +17,7 @@
   box-sizing: border-box;
   position: relative;
   padding-top: 37px;
-  font-family: 'PT_Sans' ,"Georgia" , "Serif";
+  font-family: 'PT_Sans' ,"Arial", sans-serif;
   @include px(40px);
 
   @media (max-width: $md - 1px){

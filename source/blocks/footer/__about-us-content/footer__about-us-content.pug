@@ -1,0 +1,6 @@
+mixin footer__about-us-content(modifier)
+  if modifier["itemsArr"] == undefined
+    - modifier["itemsArr"] = [{text: "empty__itemsArr", modifier:""}];
+  ul.footer__about-us-content&attributes(attributes)
+    each item in modifier.itemsArr
+      +footer__about-us-item(item)(class=item.modifier)

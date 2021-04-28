@@ -1,3 +1,9 @@
+@import '__about-us-content/footer__about-us-content';
+@import '__about-us-href/footer__about-us-href';
+@import '__about-us-item/footer__about-us-item';
+@import '__about-us-head/footer__about-us-head';
+@import '__about-us-list/footer__about-us-list';
+@import '__contact-container/footer__contact-container';
 @import '__logo-and-contacts/footer__logo-and-contacts';
 @import '../socials/socials';
 @import '../list/list';
@@ -13,9 +19,10 @@
 @import '__top/footer__top';
 .footer {
   padding-top: 86px;
-  font-family: 'PT_Sans' ,"Georgia" , "Serif";
+  font-family: 'PT_Sans' ,"Arial", sans-serif;
   max-width: 1097px;
   @include mx(auto);
+  color: $footer--color;
 
   @media (max-width: $md - 1px){
     padding-top: 39px;

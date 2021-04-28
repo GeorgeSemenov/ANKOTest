@@ -1,0 +1,9 @@
+mixin footer__contact-container(modifier)
+  li.footer__contact-container&attributes(attributes)
+    if ( !(attributes.class.indexOf('footer__contact_phone')==-1) ) 
+      - modifier._isPhone = true;
+    if ( !(attributes.class.indexOf('footer__contact_email')==-1) ) 
+      - modifier._isEmail = true;
+    if ( !(attributes.class.indexOf('footer__contact_adress')==-1) ) 
+      - modifier._isAdress = true;
+    +footer__contact(modifier)

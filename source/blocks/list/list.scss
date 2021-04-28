@@ -7,11 +7,10 @@
 @import '__head/list__head';
 @import '__img/list__img';
 .list {
-  font-family: 'PT_Sans' ,"Georgia" , "Serif";
+  font-family: 'PT_Sans' ,"Arial", sans-serif;
   font-style: normal;
   font-size: 18px;
   position: relative;
-  // margin-left: 59px;
   max-width: 250px;
   @media (max-width: $md - 1px) {
     text-align: center;
@@ -24,11 +23,7 @@
       margin-left: 0;
     }
   }
-  &.list_mobile-width_70{
-    @media (max-width: $md - 1px) {
-      max-width: 70px;
-    }
-  }
+
   &.list_mobile-width_155{
     @media (max-width: $md - 1px) {
       max-width: 155px;

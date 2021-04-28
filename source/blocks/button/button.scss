@@ -3,7 +3,7 @@
 .button {
   box-sizing: border-box;
   @include px(10px);
-  font-family: 'PT_Sans' ,"Georgia" , "Serif";
+  font-family: 'PT_Sans' ,"Arial", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 14px;

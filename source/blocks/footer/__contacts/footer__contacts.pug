@@ -3,4 +3,4 @@ mixin footer__contacts(modifier)
     - modifier["contactsArr"] = [{text:"empty__contactsArr",modifier:""}];
   ul.footer__contacts&attributes(attributes)
     each contact in modifier.contactsArr
-      +footer__contact(contact)(class=contact.modifier)
+      +footer__contact-container(contact)(class=contact.modifier)

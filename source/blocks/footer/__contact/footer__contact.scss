@@ -1,33 +1,7 @@
 .footer__contact {
-  position: relative;
-  margin-bottom: 8px;
-  padding-left: 64px;
-  &:before{
-    content: '';
-    font-size: 14px;
-    line-height: 32px;
-    color: $footer__contact-before--color;
-    margin-right: 26px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    @media (max-width: $md - 1px){
-      font-size: 12px;
-      line-height: 18px;
-    }
-  }
-
-  &.footer__contact_phone:before  {
-    content: 'Phone';
-  }
-  &.footer__contact_email:before  {
-    content: 'E-mail';
-  }
-  &.footer__contact_adress:before  {
-    content: 'Adress';
-  }
-
-  @media (max-width: $md - 1px){
-    font-size: 12px;
+  text-decoration: none;
+  color: $footer__contact--color;
+  &:hover{
+    color: $footer__contact-hover--color;
   }
 }

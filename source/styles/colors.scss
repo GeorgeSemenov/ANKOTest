@@ -5,9 +5,11 @@ $white : #fff;
 
 $gray080  : #808080;
 $grayEEE  : #EEEEEE;
+$grayC9C  : #9C9C9C;
 
 $redc25   : #EE1C25;
 $red828   : #EA2828;
+$orange   : orange;
 
 /* variables with sense */
 /* *********************************************************************** */
@@ -19,13 +21,25 @@ $title--color: $black;
 $list__content--color : $black;
 $list__head--color : $redc25;
 $list_theme_footer__head--color: $black;
-
 $about-us__text--color: $black;
 
 $advantage__number--color : $redc25;
 $advantage__measure--color: $redc25;
 $advantage__description--color: $gray080;
 $advantage_theme_main--color : $gray080;
+
+$header__page-href--color: $gray080;
+$header__page-href-hover--color : $black;
+$header__nav-pages-after--BGColor: $grayEEE;
+$header__emergency-text--color: $gray080;
+$header__emergency-tel--color: $black;
+$header__emergency-tel-hover--color : $gray080;
+$header__service-href--color: $black;
+$header__service-href-hover--color : $gray080;
+$header__nav-services--BColor: $grayEEE;
+$header__sandwich-ico--BGColor: $grayC9C;
+$header__sandwich-ico-after-before--BGColor : $header__sandwich-ico--BGColor;
+$header__mobile-devider--BGColor: $grayEEE;
 
 $main-screen__background-img--BColor: $white;
 $main-screen__description : $black;
@@ -48,8 +62,14 @@ $request-form__text-area-placeholder--color: $request-form__input-placeholder--c
 $button--color: $white;
 $button--BGColor: $red828;
 
-$footer__contacts--color: $black;
+$footer--color: $black;
+$footer__contact--color:  $black;
+$footer__contact-hover--color: $gray080;
 $footer__contact-before--color : $gray080;
 $footer__top-after--BGColor : $grayEEE;
 $footer__top-before--BGColor : $footer__top-after--BGColor;
 $footer__sign--color : $gray080;
+$footer__about-us-href--color: $inherit;
+$footer__about-us-href-hover--color: $grayEEE;
+
+$socials__social--fill: $orange;

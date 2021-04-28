@@ -1,2 +1,8 @@
 mixin footer__contact(modifier)
-  li.footer__contact&attributes(attributes)!=modifier.text
+  if modifier._isPhone
+    a.footer__contact(href=("tel:" + modifier.text) )&attributes(attributes)!=modifier.text
+  if modifier._isEmail
+    a.footer__contact(href=(href="mailto:" + modifier.text) )&attributes(attributes)!=modifier.text
+  if modifier._isAdress  
+    a.footer__contact(href=("https://goo.gl/maps/qwRwgyq49m8VMvzHA") )&attributes(attributes)!=modifier.text
+  

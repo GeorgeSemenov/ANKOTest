@@ -3,7 +3,8 @@
   top: 12px;
   left: 40.25%;
   @media (max-width: $lg - 1px) {
-    left: 43%;
+    left: 50%;
+    width: 150px
   }
   @media (max-width: $md - 1px){
     margin-left: 10px;

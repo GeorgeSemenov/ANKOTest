@@ -3,7 +3,6 @@
 @import '__logotype/header__logotype';
 @import '__service-href/header__service-href';
 @import '__service-item/header__service-item';
-@import '__service-item/header__service-item';
 @import '__services/header__services';
 @import '__nav-services/header__nav-services';
 @import '__emergency-tel/header__emergency-tel';
@@ -20,7 +19,8 @@
 .header {
   font-family: 'PT_Sans' ,"Georgia" , "Serif";
   display: flex;
-  max-width: 100%;
+  max-width: 1200px;
+  @include mx(auto);
   flex-wrap: wrap;
   position: relative;
   @media (max-width: $md - 1px){
@@ -28,9 +28,7 @@
     height: 34px;
     overflow: hidden;
     @include transition();
-    &.header_expanded{
-      height: 250px;
-    }
+    margin-bottom: 9px;
     &:after{
       content: '';
       position: absolute;

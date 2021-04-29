@@ -1,8 +1,8 @@
 .request-form__input-container {
   width: 480px;
-  margin-bottom: 16px;
+  margin-bottom: 14px;
   @media (max-width: $md - 1px){
     width: 100%;
-    margin-bottom: 11px;
+    margin-bottom: 10px;
   }
 }

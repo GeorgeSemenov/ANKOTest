@@ -1,16 +1,15 @@
 include ../../blocks/favicon/favicon.pug
 include ../../blocks/header/header.pug
-//- include ../../blocks/main-screen/main-screen.pug
-//- include ../../blocks/differentiators-and-about-us-screen/differentiators-and-about-us-screen.pug
-//- include ../../blocks/request-form/request-form.pug
-//- include ../../blocks/footer/footer.pug
+include ../../blocks/main-screen/main-screen.pug
+include ../../blocks/differentiators-and-about-us-screen/differentiators-and-about-us-screen.pug
+include ../../blocks/request-form/request-form.pug
+include ../../blocks/footer/footer.pug
 doctype html
 html(lang="ru")
   head
     meta(charset = "utf-8")
     meta(name="viewport", content="initial-scale=1.0, width=device-width")
     title ANKOTest
-    //-В папке build будет лежать файл фавикона, строка которая находится ниже позволит подцепить этот файл
     +favicon()
   body
     +header({
@@ -30,7 +29,7 @@ html(lang="ru")
         {text: "Service"},
       ]
     })
-  //-  main
+    main
       +main-screen({
         title: "Residential",
         description: "Before installing any electrical system, we recommend a complete analysis of your power quality. Some utility lines have anomalies in voltage and current distribution. Let’s find and resolve these issues before integrating a new system. Get a thorough analysis today!",

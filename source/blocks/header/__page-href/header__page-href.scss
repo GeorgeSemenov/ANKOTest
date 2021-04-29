@@ -4,7 +4,8 @@
   line-height: 18px;
   color: $header__page-href--color;
   @media (max-width: $md - 1px){
-    font-size: 12px;
+    font-size: 18px;
+    line-height: 23px;
   }
 
   &:hover{

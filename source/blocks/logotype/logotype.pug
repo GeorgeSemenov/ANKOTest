@@ -1,4 +1,7 @@
 include ../../img/svg/logoSVG
 mixin logotype(modifier)
   - attributes.class += " logotype";
-  +logoSVG(class=attributes.class)
+  if modifier["logoHref"] == undefined
+    - modifier["logoHref"] = "#!";
+  a(href=modifier.logoHref)
+    +logoSVG(class=attributes.class)

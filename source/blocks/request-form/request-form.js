@@ -2,56 +2,73 @@ $(document).ready(function(){
 	const RequestFromSubmitBtn = document.getElementById("request-form-submit-button");
 	RequestFromSubmitBtn.addEventListener('click',(e)=>{
 		e.preventDefault();
-		
-		const notaficationBG = document.createElement("div");
-		notaficationBG.style.position = "abolute";
-		notaficationBG.style.top = "0px";
-		notaficationBG.style.right = "0px";
-		notaficationBG.style.bottom = "0px";
-		notaficationBG.style.left = "0px";
-		notaficationBG.style.backgroundColor = "grey";
-
-		document.body.appendChild(notaficationBG)
+		createNotification({notificationText: "Данные отправленны на сервер", buttonText:"Хорошо"})
 	})
+
+
 
 })
 
+function createNotification({notificationText = "кнопка нажата", buttonText="Хорошо"}){
+	const notificationBG = document.createElement("div");
+	notificationBG.style.position = "absolute";
+	notificationBG.style.top = "0px";
+	notificationBG.style.right = "0px";
+	notificationBG.style.bottom = "0px";
+	notificationBG.style.left = "0px";
+	notificationBG.style.backgroundColor = "rgba(185, 185, 185, 0.6)";
+	notificationBG.style.display = "flex";
+	notificationBG.style.alignItems = "center";
+	notificationBG.style.justifyContent = "center";
+	
+	const documentBodyPositionValueBeforeClickButton = document.body.style.position;
+	document.body.style.position = "relative";
+	document.body.appendChild(notificationBG);
 
-// Создаем новый элемент div
-const newDiv = document.createElement("div");
+	const notificationContainer = document.createElement('p')
+	notificationContainer.style.textAlign = "center";
+	notificationBG.appendChild(notificationContainer);
 
-// Применяем CSS свойства к новому div
-newDiv.style.width = "200px"; // Ширина 200 пикселей
-newDiv.style.height = "100px"; // Высота 100 пикселей
-newDiv.style.backgroundColor = "lightblue"; // Цвет фона светло-голубой
-newDiv.style.border = "1px solid black"; // Граница 1 пиксель черной цветом
+	const notificationTextContainer = document.createElement('span');
+	notificationTextContainer.textContent = notificationText;
+	notificationTextContainer.style.marginBottom = "10px";
+	notificationContainer.appendChild(notificationTextContainer)
 
-// Добавляем новый div на страницу
-document.body.appendChild(newDiv);
+	const notificationCloseButton = document.createElement("button");
+	notificationCloseButton.classList.add('button')
+	notificationCloseButton.textContent = buttonText;
+	notificationContainer.appendChild(notificationCloseButton);
+}
+
+function makeNotification(textObj){
+	createNotification(textObj)
+
+}
+
 
 //удаляем элемент
 // Находим ранее созданный div
-const divToRemove = document.querySelector("div");
+// const divToRemove = document.querySelector("div");
 
-// Проверяем, что div существует
-if (divToRemove) {
-    // Удаляем div из его родительского элемента
-    divToRemove.parentNode.removeChild(divToRemove);
-} else {
-    console.log("Элемент не найден");
-}
+// // Проверяем, что div существует
+// if (divToRemove) {
+//     // Удаляем div из его родительского элемента
+//     divToRemove.parentNode.removeChild(divToRemove);
+// } else {
+//     console.log("Элемент не найден");
+// }
 
-//Не забудь удалить и слушателей   removeListener
-// Создаем функцию-обработчик для события click
-function handleClick() {
-    console.log("Клик по элементу");
-}
+// //Не забудь удалить и слушателей   removeListener
+// // Создаем функцию-обработчик для события click
+// function handleClick() {
+//     console.log("Клик по элементу");
+// }
 
-// Находим элемент, к которому добавлен слушатель
-const element = document.querySelector("#myElement");
+// // Находим элемент, к которому добавлен слушатель
+// const element = document.querySelector("#myElement");
 
-// Добавляем слушатель события click
-element.addEventListener("click", handleClick);
+// // Добавляем слушатель события click
+// element.addEventListener("click", handleClick);
 
-// Удаляем слушатель события click
-element.removeEventListener("click", handleClick);
+// // Удаляем слушатель события click
+// element.removeEventListener("click", handleClick);
